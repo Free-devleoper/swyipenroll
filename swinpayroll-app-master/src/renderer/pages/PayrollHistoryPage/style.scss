@@ -1,0 +1,59 @@
+.backToIndex {
+  button {
+    background-color: darkred;
+    border: 0;
+    border-radius: 5px;
+    color: lightgrey;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin: 15px auto;
+    margin-left: 10px;
+
+    &.delete {
+      background-color: #111827;
+      margin-top: auto;
+    }
+
+    &:hover {
+      background-color: lightgrey;
+      color: #111827;
+    }
+  }
+}
+
+.payrollWrapper {
+  padding: 30px;
+  background: rgba(#000, 0.1);
+  
+  > div > form {
+    flex-wrap: wrap;
+    width: calc(100% - 100px); 
+
+    > div {
+      flex: none;
+      width: 50%;
+
+      &:first-of-type {
+        margin-bottom: 20px
+      } 
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    width: 70px;
+    right: 0;
+    margin-right: 30px;
+    
+    > button {
+      margin: 0;
+      align-self: flex-end;
+    }
+  }
+}
+
+
+
+
+
+

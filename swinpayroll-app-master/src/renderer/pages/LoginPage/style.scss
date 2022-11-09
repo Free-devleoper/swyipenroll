@@ -1,0 +1,79 @@
+.LoginPage {
+  display: flex;
+  flex-direction: column;
+  color: lightgrey;
+
+  > .header {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    vertical-align: middle;
+
+    > .logoContainer {
+      display: flex;
+      text-align: end;
+      margin-right: 20px;
+    }
+
+    > .headingMain {
+      display: flex;
+      font-weight: bold;
+      font-size: 36px;
+      text-align: start;
+      height: 100px;
+      align-items: center;
+    }
+  }
+
+  > .body {
+    > form {
+      display: block;
+      margin: 0 auto;
+      width: 25%;
+
+      > div {
+        margin: 8px;
+
+        &.error {
+          color: red;
+        }
+
+        > a {
+          margin: 5px;
+        }
+
+        > button {
+          background-color: #111827;
+          color: lightgrey;
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+          margin: 5px;
+          cursor: pointer;
+        }
+
+        > input {
+          border-radius: 5px;
+          border: none;
+          margin-left: 5px;
+          background: lightgrey;
+          width: 100%;
+          padding: 2px;
+
+          &:focus {
+            outline: none;
+          }
+
+
+        }
+      }
+
+      .headingSub {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

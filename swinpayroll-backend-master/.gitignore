@@ -1,0 +1,9 @@
+.env
+logs/*
+!logs/.gitkeep
+node_modules
+uploads/employee_cvs/*
+!uploads/employee_cvs/.gitkeep
+uploads/employee_photos/*
+!uploads/employee_photos/.gitkeep
+yarn-error.log

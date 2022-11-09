@@ -1,0 +1,148 @@
+.MasterPage {
+  height: calc(100% - 65px);
+  margin: 0 auto;
+  width: calc(100% - 100px);
+  min-width: 575px;
+
+  > .backToIndex {
+    button {
+      background-color: darkred;
+      border: 0;
+      border-radius: 5px;
+      color: lightgrey;
+      cursor: pointer;
+      padding: 10px 10px;
+      margin: 15px auto;
+      margin-left: -35px;
+
+      &.delete {
+        background-color: #111827;
+        margin-top: auto;
+      }
+
+      &:hover {
+        background-color: lightgrey;
+        color: #111827;
+      }
+    }
+  }
+
+  > .tabs {
+    display: flex;
+    min-height: 30px;
+    margin: 0 10px;
+
+    > .tab {
+      background: lightgrey;
+      border: none;
+      border-bottom: 0;
+      border-radius: 5px 5px 0 0;
+      cursor: pointer;
+      flex-grow: 1;
+      font-size: 15px;
+      padding: 5px 0;
+      margin: 0 3px;
+      text-align: center;
+
+      &:hover,
+      &.active {
+        background-color: #111827;
+        color: lightgrey;
+      }
+    }
+  }
+
+  > .container {
+    background: rgba(#000, 0.1);
+    min-height: calc(100% - 30px);
+
+    > .containerTabs {
+      display: flex;
+
+      > .containerTab {
+        background: lightgrey;
+        border: none;
+        border-right: 1px solid #000;
+        color: black;
+        flex-grow: 1;
+        font-size: 15px;
+        padding: 5px 0;
+        text-align: center;
+
+        &:disabled {
+          color: grey;
+        }
+
+        &:not(:disabled) {
+          cursor: pointer;
+
+          &:hover,
+          &.active {
+            color: white;
+            background-color: #111827;
+            border-bottom: 1px solid #111827;
+          }
+        }
+
+        &.newTab {
+          border-top-left-radius: 5px;
+          border-left: 0;
+        }
+
+        &.viewTab {
+          border-top-right-radius: 5px;
+          border-right: 0;
+        }
+      }
+    }
+
+    > .containerContent {
+      display: flex;
+      margin: 0 auto;
+      padding: 30px;
+      height: calc(100% - 100px);
+      width: calc(100% - 60px);
+
+      > .tableWrapper {
+        overflow: auto;
+        width: 100%;
+
+        > table {
+          max-width: 100%;
+          border-collapse: collapse;
+          width: 100%;
+
+          .buttons {
+            width: 0px;
+          }
+
+          td, th {
+            border: solid lightgray 1px;
+            padding: 10px;
+          }
+
+          button {
+            background-color: #111827;
+            border: 0;
+            border-radius: 5px;
+            color: lightgrey;
+            cursor: pointer;
+            padding: 10px 10px;
+            margin: 5px auto;
+            width: 100%;
+
+            &.delete {
+              background-color: #111827;
+              margin-top: auto;
+            }
+
+            &:hover {
+              background-color: lightgrey;
+              color: #111827;
+            }
+          }
+        }
+      }
+    }
+  }
+}

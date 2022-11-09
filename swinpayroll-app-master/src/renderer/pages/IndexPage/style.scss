@@ -1,0 +1,51 @@
+.IndexPage {
+  display: flex;
+  flex-direction: column;
+
+  > .header {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    vertical-align: middle;
+    color: lightgrey;
+
+    > .logoContainer {
+      display: flex;
+      text-align: end;
+      margin-right: 20px;
+    }
+
+    > .headingMain {
+      display: flex;
+      font-weight: bold;
+      font-size: 36px;
+      text-align: start;
+      height: 100px;
+      align-items: center;
+    }
+  }
+
+  > .body {
+    margin: auto;
+    text-align: center;
+
+    button {
+      padding: 15px;
+      border-radius: 10px;
+      margin: 5px;
+      width: 100%;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: #111827;
+      color: lightgrey;
+      border: 0;
+
+      &:hover {
+        background-color: lightgrey;
+        color: #111827;
+      }
+    }
+  }
+}

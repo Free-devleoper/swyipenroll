@@ -1,0 +1,106 @@
+.MasterForm {
+  width: 100%;
+  height: 100%;
+
+  > form {
+    display: flex;
+    width: 100%;
+    color: #d3d3d3;
+    height: 100%;
+
+    > div {
+      flex: 1;
+      
+
+      > div > div {
+        padding: 5px 0;
+        display: flex;
+
+        > .label {
+          width: calc(50% - 15px);
+        }
+
+        > input, select, textarea {
+          width: calc(50% - 15px);
+          border-radius: 5px;
+          border: none;
+          margin-left: 5px;
+          background: lightgrey;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        > input[type="file"] {
+          background-color: none;
+          background: transparent;
+        }
+
+        > select {
+          border-radius: 5px;
+          border: none;
+          background-color: lightgrey;
+
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        > textarea {
+          border-radius: 5px;
+          border: none;
+          background: lightgrey;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      > img {
+        height: 150px;
+        width: 150px;
+      }
+
+      &:last-of-type {
+        display: flex;
+        flex: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        > button {
+          background-color: #111827;
+          border: 0;
+          border-radius: 5px;
+          color: lightgrey;
+          cursor: pointer;
+          padding: 10px 10px;
+          margin: 5px;
+          width: 70px;
+
+          &.submit {
+            margin-bottom: auto;
+          }
+
+          &.delete {
+            background-color: #111827;
+            position: absolute;
+            bottom: 42px;
+          }
+
+          &:disabled {
+            color: grey;
+            cursor: default;
+          }
+
+          &:hover {
+            background-color: lightgrey;
+            color: #111827;
+          }
+        }
+      }
+    }
+  }
+}
