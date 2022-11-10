@@ -4,7 +4,6 @@ import MasterForm, { Resource } from 'renderer/components/MasterForm';
 import { Component } from 'react';
 import { FetchApi } from 'renderer/components/Auth';
 import InputWrapper from 'renderer/components/InputWrapper';
-import SelectSearch from 'react-select-search';
 
 enum MaritalStatus {
   SINGLE = 'single',
@@ -308,12 +307,11 @@ export default class EmployeeForm extends Component<Props, State> {
 
             <InputWrapper attribute="position_id" errors={errors}>
               <>
-
                 <div className="label">Position:</div>
-                
-                <select disabled={readonly} name="position_id" value={employee.position_id}>
+                <input list="brow" name="position_id" value={employee.position_id}/>
+                <datalist id="brow">
                   {MasterForm.renderSelectOptions(positions)}
-                </select>
+                </datalist>
               </>
             </InputWrapper>
 

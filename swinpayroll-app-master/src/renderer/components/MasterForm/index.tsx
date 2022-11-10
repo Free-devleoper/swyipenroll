@@ -34,7 +34,7 @@ export default class MasterForm<TResource> extends Component<Props<TResource>, S
     return [
       <option key="none" value="">None</option>,
       ...resources.map(({ code, id, name }, index) => (
-        <option key={index} value={id}>{name} ({code})</option>
+        <option key={index} value={name}>{name}</option>
       ))
     ]
   }
